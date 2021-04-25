@@ -1,0 +1,26 @@
+[ignore]
+
+# Declarations allow us to use the types of the external interfaces of
+# third-party packages without type-checking the contents.
+[declarations]
+<PROJECT_ROOT>/node_modules/.*
+
+[include]
+src/
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.mjs
+module.file_ext=.json
+module.file_ext=.sass
+module.file_ext=.scss
+module.system.node.resolve_dirname=node_modules
+module.system.node.allow_root_relative=true
+module.system.node.root_relative_dirname=src
+
+[strict]
